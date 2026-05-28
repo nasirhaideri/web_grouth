@@ -1,0 +1,67 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<section class="py-24 bg-white overflow-hidden">
+    <div class="container mx-auto px-6">
+        <!-- Story Section -->
+        <div class="flex flex-col md:flex-row items-center gap-16 mb-40" data-aos="fade-up">
+            <div class="md:w-1/2">
+                <h1 class="text-6xl font-black text-slate-900 mb-8 uppercase italic tracking-tighter">The Web <br><span class="text-blue-600">Grouth</span> Story.</h1>
+                <p class="text-xl text-slate-500 font-bold mb-6 italic">Building Digital Authority Since 2018.</p>
+                <p class="text-lg text-slate-600 leading-relaxed font-medium mb-8">
+                    We started with one mission: to prove that <strong>Organic Traffic</strong> is the most valuable asset for any brand. Unlike others, we don't rely on automated bots. We focus on manual relationship building with premium publishers to give you links that last a lifetime.
+                </p>
+                <div class="bg-blue-600 text-white p-10 rounded-[3rem] shadow-2xl border-l-8 border-slate-900">
+                    <h3 class="text-xl font-bold mb-4 uppercase">Our Commitment</h3>
+                    <p class="text-blue-50 font-medium">Manual Outreach. Manual Placements. Permanent SEO Success.</p>
+                </div>
+            </div>
+            <!-- FIXED: No overlap, clean layout -->
+            <div class="md:w-1/2">
+                <img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                     class="rounded-[3rem] shadow-2xl border-8 border-slate-50 w-full" alt="Web Grouth Team">
+            </div>
+        </div>
+
+        <!-- Strategy Section -->
+        <div class="space-y-40">
+            <!-- 1. Off-Page -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-20" data-aos="fade-left">
+                <div class="md:w-1/2">
+                    <div class="bg-blue-50 text-blue-600 px-4 py-1 rounded-full text-xs font-black w-fit mb-6">STRATEGY #01</div>
+                    <h2 class="text-4xl font-black text-slate-900 mb-6 uppercase">Manual Guest Posting</h2>
+                    <p class="text-lg text-slate-600 font-medium leading-loose mb-10">
+                        Our off-page approach is 100% human-driven. We identify high-authority sites with <strong>Real Organic Traffic</strong>. No PBNs, no link farms. Just contextual backlinks from websites that Google loves.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 font-bold text-slate-400 text-xs">
+                        <div class="bg-slate-50 p-4 rounded-xl">✓ Manual Outreach</div>
+                        <div class="bg-slate-50 p-4 rounded-xl">✓ High DR Content</div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         class="rounded-[4rem] shadow-2xl w-full h-auto">
+                </div>
+            </div>
+
+            <!-- 2. Technical SEO -->
+            <div class="flex flex-col md:flex-row items-center gap-20" data-aos="fade-right">
+                <div class="md:w-1/2">
+                    <div class="bg-emerald-50 text-emerald-600 px-4 py-1 rounded-full text-xs font-black w-fit mb-6">STRATEGY #02</div>
+                    <h2 class="text-4xl font-black text-slate-900 mb-6 uppercase">Technical Foundation</h2>
+                    <p class="text-lg text-slate-600 font-medium leading-loose mb-10">
+                        We optimize your website's indexing, speed, and architecture. By fixing technical errors and improving Core Web Vitals, we ensure your site is ready to dominate the SERPs.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 font-bold text-slate-400 text-xs">
+                        <div class="bg-slate-50 p-4 rounded-xl">✓ Indexing Optimization</div>
+                        <div class="bg-slate-50 p-4 rounded-xl">✓ Fast Loading Speed</div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         class="rounded-[4rem] shadow-2xl w-full h-auto border-8 border-slate-50">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

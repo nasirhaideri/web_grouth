@@ -1,0 +1,85 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- 1. HERO SECTION (Optimized for Laptop & Mobile) -->
+<section class="relative bg-white pt-20 pb-32 md:pt-32 md:pb-40 overflow-hidden">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2 text-left" data-aos="fade-right">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-8">
+                Organic <span class="text-blue-600">Growth</span> <br>Built on Trust.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-lg font-medium leading-relaxed">
+                Web Grouth delivers high-impact White Hat SEO and manual guest posting services. We scale your organic traffic through ethical outreach and high-authority backlinks.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="{% url 'contact' %}" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-center shadow-lg hover:bg-blue-700 transition">Get a Free SEO Audit</a>
+                <a href="{% url 'marketplace' %}" class="border-2 border-slate-200 text-slate-800 px-8 py-4 rounded-xl font-bold text-center hover:bg-slate-50 transition">View Inventory</a>
+            </div>
+        </div>
+        
+        <!-- Professional Laptop Image -->
+        <div class="md:w-1/2 relative" data-aos="zoom-in">
+            <div class="bg-slate-100 p-2 rounded-[2.5rem] shadow-2xl border border-slate-200 overflow-hidden">
+                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                     class="rounded-[2rem] w-full h-auto object-cover" alt="Professional SEO Strategy">
+            </div>
+            <!-- Floating Result Card -->
+            <div class="absolute -bottom-6 -right-6 bg-emerald-500 text-white p-6 rounded-2xl shadow-xl hidden md:block">
+                <div class="text-3xl font-black">100%</div>
+                <div class="text-[10px] font-bold uppercase tracking-widest">White Hat SEO</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. CORE SERVICES (Responsive Grid) -->
+<section class="py-24 bg-slate-50">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-black text-slate-900 mb-16 uppercase italic">Our SEO Pillars</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+            <div class="bg-white p-10 rounded-[2.5rem] shadow-xl hover:-translate-y-2 transition duration-300 border border-slate-100">
+                <div class="text-4xl mb-6">🏆</div>
+                <h3 class="text-2xl font-bold mb-4">Manual Guest Posting</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Real sites, real traffic. We handle everything from niche research to high-quality content placement.</p>
+            </div>
+            <div class="bg-white p-10 rounded-[2.5rem] shadow-xl hover:-translate-y-2 transition duration-300 border border-slate-100">
+                <div class="text-4xl mb-6">🔍</div>
+                <h3 class="text-2xl font-bold mb-4">Strategic Off-Page</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Safe and scalable link building strategies that increase domain authority without risk.</p>
+            </div>
+            <div class="bg-white p-10 rounded-[2.5rem] shadow-xl hover:-translate-y-2 transition duration-300 border border-slate-100">
+                <div class="text-4xl mb-6">⚙️</div>
+                <h3 class="text-2xl font-bold mb-4">Technical Excellence</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Optimizing site architecture and speed to ensure your rankings stay permanent.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. FEEDBACK SLIDER (Restored) -->
+<section class="py-24 bg-white overflow-hidden border-t">
+    <div class="container mx-auto px-6 text-center mb-16">
+        <h2 class="text-4xl font-black text-slate-900">What Our Clients Say</h2>
+    </div>
+    <div class="flex overflow-hidden relative">
+        <div class="animate-marquee-infinite py-10 flex whitespace-nowrap">
+            {% for i in "12345" %}
+            <div class="bg-slate-50 p-8 rounded-[2rem] shadow-md border border-slate-100 mx-5 w-[350px] md:w-[400px] shrink-0 flex flex-col items-center text-center">
+                <img src="https://i.pravatar.cc/150?u=user{{i}}" class="w-16 h-16 rounded-full border-4 border-white shadow-sm mb-4">
+                <div class="text-yellow-400 mb-2">★★★★★</div>
+                <p class="text-slate-600 italic font-medium whitespace-normal">"Web Grouth transformed our rankings. Their guest posting service is strictly white-hat and very effective."</p>
+            </div>
+            {% endfor %}
+            <!-- Duplicate for Infinite Loop -->
+            {% for i in "12345" %}
+            <div class="bg-slate-50 p-8 rounded-[2rem] shadow-md border border-slate-100 mx-5 w-[350px] md:w-[400px] shrink-0 flex flex-col items-center text-center">
+                <img src="https://i.pravatar.cc/150?u=userloop{{i}}" class="w-16 h-16 rounded-full border-4 border-white shadow-sm mb-4">
+                <div class="text-yellow-400 mb-2">★★★★★</div>
+                <p class="text-slate-600 italic font-medium whitespace-normal">"Safe and scalable link building. Best SEO agency for organic growth!"</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
