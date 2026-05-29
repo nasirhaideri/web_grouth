@@ -11,7 +11,6 @@ SECRET_KEY = 'django-insecure-your-secret-key-here'
 DEBUG = True
 
 ALLOWED_HOSTS = ['webgrouth-agency.onrender.com', 'webgrouth.com', 'www.webgrouth.com', '127.0.0.1']
-
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
